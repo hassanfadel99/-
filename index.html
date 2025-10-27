@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>جدول الدوام الأسبوعي</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            direction: rtl;
+            text-align: right;
+        }
+        .container {
+            width: 95%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+        .header {
+            background-color: #00695C;
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            border-bottom: 5px solid #004d40;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            margin: 5px 0 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .main-title {
+            text-align: center;
+            color: #00695C;
+            padding: 15px 0 5px;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .title-wrapper {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #555;
+            padding: 0 15px;
+            border-bottom: 2px dashed #eee;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 98%;
+            margin: 0 auto 20px;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            table-layout: fixed;
+        }
+        thead th {
+            background-color: #26a69a;
+            color: white;
+            padding: 12px 5px;
+            text-align: center;
+            border: 1px solid #00695C;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        tbody td {
+            border: 1px solid #ddd;
+            padding: 10px 5px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 0.9rem;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        tbody tr:nth-child(even) td {
+            background-color: #f0f0f0;
+        }
+        .highlight {
+            background-color: #ffd700;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .main-title {
+                font-size: 1.4rem;
+                padding: 10px 0 5px;
+            }
+            thead th {
+                font-size: 0.85rem;
+                padding: 10px 2px;
+            }
+            td {
+                font-size: 0.75rem;
+                padding: 8px 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+
+            <h1>تجمع شباب الشريعة</h1>
+            <p>مديرية البصرة</p>
+        </header>
+        <h2 class="main-title">جدول الدوام الأسبوعي لكادر التجمع</h2>
+        <div class="title-wrapper">
+            <p class="subtitle">يبدأ الدوام من الساعة (٨ - ١٢) مساءً</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>الأحد</th>
+                    <th>الاثنين</th>
+                    <th>الثلاثاء</th>
+                    <th>الأربعاء</th>
+                    <th>الخميس</th>
+                    <th>الجمعة</th>
+                    <th>السبت</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- صفوف الجدول كما هي -->
+                <tr><td>ياسين البطاط</td><td>علي الحساني</td><td>علي الياسري</td><td>علي الشاوي</td><td>فرحان الحيدري</td><td>محسن السالم</td><td>حمزة العواجي</td></tr>
+                <tr><td>شبيب البطاط</td><td>ابو الحسن العلواني</td><td>حسن المويل</td><td>ابو الحسن العلواني</td><td>حسن المويل</td><td>منتظر الحساني</td><td>حسين السوداني</td></tr>
+                <tr><td>منتظر الحساني</td><td>حسين السوداني</td><td>كرار البخاتري</td><td>محمد الحلفي</td><td>كرار البخاتري</td><td>محمد الحلفي</td><td>مرتضى العبادي</td></tr>
+                <tr><td>كرار البخاتري</td><td>محمد الحلفي</td><td>مرتضى العبادي</td><td>ضياء الخفاجي</td><td>مرتضى العبادي</td><td>ضياء الخفاجي</td><td>حسن العواجي</td></tr>
+                <tr><td>مرتضى العبادي</td><td>ضياء الخفاجي</td><td>حسن الصاحي</td><td>حسن العواجي</td><td>حسن الصاحي</td><td>حسن العواجي</td><td>حسن الصاحي</td></tr>
+                <tr><td>حسن الصاحي</td><td>حسن العواجي</td><td>حبيب البطاط</td><td>محمد السلمي</td><td>حبيب البطاط</td><td>محمد السلمي</td><td>حبيب البطاط</td></tr>
+                <tr><td>حبيب البطاط</td><td>محمد السلمي</td><td>مازن السوداني</td><td>علي العواجي</td><td>مازن السوداني</td><td>علي العواجي</td><td>مازن السوداني</td></tr>
+                <tr><td>مازن السوداني</td><td>محمد البزوني</td><td>وليد الحيدري</td><td>محمد البزوني</td><td>وليد الحيدري</td><td>محمد البزوني</td><td>محمد البزوني</td></tr>
+                <tr><td>وليد الحيدري</td><td>علي العواجي</td><td></td><td></td><td></td><td></td><td>وليد الحيدري</td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+
+        <!-- أزرار الطباعة والعودة -->
+        <div style="text-align: center; margin-top: 15px;">
+            <button onclick="window.print()" style="padding: 10px 25px; font-size: 1rem; background-color: #00695C; color: white; border: none; border-radius: 8px; cursor: pointer; margin-bottom: 10px;">
+                🖨️ طباعة أو حفظ كـ PDF
+            </button>
+            <br>
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="padding: 8px 20px; font-size: 0.9rem; background-color: #004d40; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                🔝 العودة إلى الأعلى
+            </button>
+        </div>
+    </div>
+</body>
+</html>
